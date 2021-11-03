@@ -1,0 +1,412 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Oswald', sans-serif;
+	scroll-behavior: smooth;
+}
+
+
+body {
+	background: #000000;
+	color: #ffffff;
+	background-color: #000000;
+	background-color: #070011;
+	background-color: #070011;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%239106f4' fill-opacity='0.15'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");	
+	font-size: 16px;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+/* Navegacion */
+.nav-main {
+	font-size: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+	padding: 30px 0;
+}
+
+.nav-brand {
+	width: 50px;
+}
+
+/* Nav derecha*/
+
+.nav-main ul{
+	display: flex;
+
+}
+
+.nav-main ul li {
+	padding: 10px;
+}
+
+.nav-main ul li a{
+	padding: 10px;
+}
+
+.nav-main ul li a:hover {
+	border-bottom: 2px solid #AA08B4;
+}
+
+.nav-main ul.nav-menu {
+	flex: 1;
+	margin-left: 120px;
+	font-size: 1.2em
+}
+
+
+.menu-btn {
+	position: absolute;
+	cursor: pointer;
+	top: 15px;
+	right: 30px;
+	z-index: 2;
+	display: none
+}
+
+
+/* Presentacion */
+hr{
+	margin: 25px 0;
+}
+.showcase {
+	width: 100%;
+	height: 500px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-bottom: 20px;
+}
+
+.CV {
+	cursor: pointer;
+	display: inline-block;
+	border: 0;
+	font-weight: bold;
+	padding: 7px 20px;
+	background: #7905AA;
+	color: #ffffff;
+	font-size: 14px;
+	border: 5px solid #6A0480;
+	margin: 20px 0;
+	width: 120px;
+	height: 50px 
+
+}
+
+.CV:hover {
+	opacity: .7;
+}
+.showcase h2, .conocimientos  {
+	width: 300px;
+	padding: 30px 0 20px 0;
+	color: #fff;
+	margin-bottom: 10px;
+	font-size: 3em;
+	font-weight: bold;
+	font-family: Helvetica;
+	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.showcase p{
+	margin-bottom: 10px;
+	font-family: 'Source Code Pro', monospace;
+	width: 460px;
+	font-size: 20px
+}
+.conocimientos {
+	font-size: 5em;
+	font-family: 'Source Code Pro', monospace;
+}
+/* Sobre mi*/
+
+.sobremi {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 25px;
+	margin: 200px 0;
+	padding-left: 50px;
+}
+
+.sobremi img { 
+	width: 150px;
+	height: 150px;
+}
+
+.sobremi h3 {
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+.sobremi a {
+	padding: 10px 0;
+	color: #f2f2f2;
+	text-transform: uppercase;
+	display: inline-block;
+	font-weight: bold;
+
+}
+
+.sobremi a:hover {
+	text-decoration: underline;
+}
+.html {
+	color: #FF6C00
+}
+.css {
+	color: #0036FF
+}
+.js {
+	color: #FBEC00
+}
+.contenedorr {
+	width: 80%;
+	background-color: #d2d7d3;
+	margin-left: 0;
+	border-radius: 15px;
+}
+.barhtml, .barcss, .barjs {
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+	border-radius: 5px;
+}
+.barhtml { width: 90%; background-color: #EE5104; }
+.barcss { width: 80%; background-color: #0B18BE; }
+.barjs { width: 40%; background-color: #FCFF00 ; }
+/*Banner*/
+
+.banner {
+	width: 100%;
+	height: 350px;
+	margin-bottom: 40px;
+}
+
+.banner .contenido {
+	width: 405px;
+	padding: 60px 0 0 30px;
+	color: white;
+	text-shadow: 3px 2px 2px #000000;
+	font-weight: 700;
+	background-image: url(img/Secundaria.jpg);
+	display: block;
+	height: 336px;
+	background-size: 336px
+}
+
+.banner p, h2{
+	margin: 10px 0 20px 0; 
+}
+
+
+/*banner 2*/
+
+.banner2 {
+	width: 100%;
+	height: 350px;
+}
+
+.banner2 .contenido {
+	width: 50%;
+	padding: 100px 0 0 30px;
+	color: #ffffff;
+	text-shadow: 3px 2px 2px #000000;
+	background-image: url(img/medicina.jpg);
+	display: block;
+	height: 300px;
+	width: 405px;
+	background-size: 450px 350px
+}
+
+/* social */
+.social {
+	margin: 50px;
+
+}
+
+.social p {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.link a{
+	margin: 0 30px;
+}
+
+.link a i{
+	font-size: 3.2em;
+}
+
+/* Footer */
+
+.footer-links {
+	background: #ff3640;
+	color: 616161;
+	font-size: 12px;
+	padding: 35px 0;
+}
+
+.footer-contenedor {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 10px;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.footer-contenedor ul{
+	margin: 0 auto;
+}
+
+.footer-contenedor ul li{
+	line-height: 2.8;
+}
+
+.footer {
+	background: #2f3640;
+	color: #616161;
+	font-size: 12px;
+	padding: 20px 0;
+	text-align: center;
+	padding-bottom: 20px; 
+}
+
+
+
+@media (max-width: 700px) {
+	body {
+		width: 100%;
+		height: 100%
+	}
+	.menu-btn {
+		display: block;
+	}
+
+.nav-main ul.nav-menu {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #2f3640;
+	height: 100%;
+	padding: 30px;
+	opacity: .9;
+	transform: translateX(-500px);
+	transition: transform .5s ease-in-out;
+}
+
+.nav-main ul.nav-menu.show {
+	transform: translateX(-150px);
+}
+
+.nav-main ul.nav-menu li{
+	padding: 20px;
+	font-size: 14px;
+}
+
+.nav-main ul.nav-menu-right {
+	margin-right: 40px;
+}
+
+	.sobremi {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.banner .contenido, .banner2 .contenido {
+		width: 80%
+	}
+}
+
+@media (max-width: 500px){
+	.sobremi {
+		grid-template-columns: 1fr;
+	}
+
+
+	.sobremi img{
+		height: 260px
+	}
+
+	.banner .contenido, .banner2 .contenido {
+		width: 100%;
+		padding: 20px 20px;
+	}
+	.showcase p {
+	width: 100%;
+	height: 150px
+}
+	.showcase h2 {
+		width: 100%;
+		height: 200px
+
+	}
+	.sobremi {
+		margin: 30px;
+		padding: 32px
+	}
+	.sobremi img { 
+	width: 70%;
+	height: 70%;
+}
+	.conocimientos {
+	font-size: 2em;
+	}
+	.uni{
+		height: 0px;
+		width: 0px;
+		left: 80px
+	}
+	.secundaria {
+		height: 0px;
+		width: 0px;
+		left: 60px
+
+	}
+	.banner .contenido {
+		background-image: url(img/Secundaria.jpg);
+		color: white;
+		text-transform: uppercase;
+		font-weight: 700;
+		text-align: underline;
+		text-shadow: 3px 2px 2px #000000;
+	}
+	.banner2 .contenido {
+		background-image: url(img/medicina.jpg);
+		background-position: center;
+		background-size: 500px;
+		margin: 120px 0;
+		text-transform: uppercase;
+		text-align: underline;
+		text-shadow: 3px 2px 2px #000000;
+	}
+
+	.CV {
+		position: relative;
+		top: 170px;
+		left: 200px;
+		padding: 3px;
+	}
+}
